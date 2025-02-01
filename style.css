@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* Ensures the navbar doesn’t stretch too much */
+    margin: 0 auto; /* Centers the navbar horizontally */
+    width: 100%; /* Ensures responsiveness */
+}
+
+.nav-logo img {
+    height: 50px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #007BFF;
+}
+
+.nav-user {
+    font-size: 1.5rem;
+    color: #333;
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.hero-section {
+    height: 100vh;
+    background: url("background.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid orange;
+    text-align: center;
+    display: inline-block;
+    animation: typing 2s steps(20, end) forwards;
+}
+
+.hero-content p{
+    font-size: 18px;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+
